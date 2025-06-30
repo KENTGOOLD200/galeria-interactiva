@@ -1,0 +1,71 @@
+/* Fondo general con gradiente */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f8f883, #6ffa8d);
+}
+
+/* Bordes redondeados para secciones */
+header, nav, main, section, footer, button {
+  border-radius: 10px;
+}
+
+/* Botones con animación */
+button {
+  color: #4600eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Estilo para la galería */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  background-color: #afdbff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+/* Imágenes dentro de la galería */
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover */
+.gallery-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Imagen seleccionada */
+.gallery-container img.selected {
+  border-color: #ff1765;
+  box-shadow: 0 0 15px rgba(255, 30, 30, 0.6);
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header, nav, main, section, footer {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  video, img, iframe {
+    width: 100%;
+    height: auto;
+  }
+}

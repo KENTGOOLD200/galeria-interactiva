@@ -1,0 +1,46 @@
+<!-- Creación de una galería interactiva -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería Interactiva</title>
+  <!-- Estilos personalizada -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="bg-dark text-white text-center p-3">
+    <h1>✨ Galería Interactiva</h1>
+    <p>Agrega, selecciona y elimina imágenes dinámicamente</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-4">
+    <!-- Sección para agregar imágenes -->
+    <section>
+      <h2>📸 Añadir Imagen</h2>
+      <div class="form-group">
+        <label for="image-url">🌐 URL de la imagen</label>
+        <input type="url" id="image-url" class="form-control" placeholder="https://ejemplo.com/imagen.jpg">
+      </div>
+      <button id="add-image" class="btn btn-success mr-2">➕ Agregar Imagen</button>
+      <button id="delete-image" class="btn btn-danger">🗑️ Eliminar Imagen Seleccionada</button>
+    </section>
+
+    <!-- Sección de galería -->
+    <section class="mt-4">
+      <h2>🖼️ Galería</h2>
+      <div id="gallery" class="gallery-container"></div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="text-center p-3 bg-light">
+    <p>© 2025 int.galery.com | Política de Privacidad | Términos de Servicio</p>
+  </footer>
+
+  <!-- Script de funcionalidad -->
+  <script src="script.js"></script>
+</body>
+</html>
